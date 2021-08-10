@@ -1,6 +1,9 @@
+<script>
+	import SectionTitle from './SectionTitle.svelte';
+</script>
 <section>
-	<h2>About</h2>
-	<p>
+	<SectionTitle title='About'/>
+	<p class="fonts-serif">
 		Lorep ipsum dolor sit amet, consectetur adipiscing elit. Duis interdum ut mi ut mollis. Sed
 		facilisis dolor nec nulla convallis mattis. Suspendisse lacinia mauris sapien, ut lacinia lacus
 		feugiat quis. Phasellus at dui eros. Sed ac magna massa. Orci varius natoque penatibus et magnis

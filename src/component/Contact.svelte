@@ -1,5 +1,8 @@
+<script>
+	import SectionTitle from './SectionTitle.svelte';
+</script>
 <section class="scene">
-	<h2>Contact</h2>
+	<SectionTitle title="Contact"/>
 	<form>
 		<label>
 			Subject
