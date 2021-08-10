@@ -8,7 +8,10 @@
 </script>
 
 <svelte:head>
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400;500&family=Roboto:wght@900&display=swap">
+	<link
+		rel="stylesheet"
+		href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400;500&family=Roboto:wght@900&display=swap"
+	/>
 </svelte:head>
 
 <main>
