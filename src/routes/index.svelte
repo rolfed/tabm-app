@@ -7,21 +7,14 @@
 	import Footer from '../component/Footer.svelte';
 </script>
 
-<svelte:head>
-	<link
-		rel="stylesheet"
-		href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400;500&family=Roboto:wght@900&display=swap"
-	/>
-</svelte:head>
-
-<main>
-	<Nav />
+<Nav />
+<main class="flex flex-col min-h-screen mx-auto p-4 md:px-32 xl:px-64">
 	<Hero />
 	<About />
 	<Playlist />
 	<Contact />
-	<Footer />
 </main>
+<Footer />
 
 <style>
 </style>

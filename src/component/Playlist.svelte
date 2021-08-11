@@ -1,6 +1,7 @@
 <script>
 	import SectionTitle from './SectionTitle.svelte';
 </script>
-<section>
-	<SectionTitle title="Playlist"/>
+
+<section class="h-auto md:h-screen">
+	<SectionTitle title="Playlist" />
 </section>
