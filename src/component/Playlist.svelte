@@ -1,7 +1,11 @@
 <script>
 	import SectionTitle from './SectionTitle.svelte';
+	import SectionBody from './SectionBody.svelte';
 </script>
 
 <section class="h-auto md:h-screen">
-	<SectionTitle title="Playlist" />
+    <SectionBody>
+	    <SectionTitle title="Playlist" />
+
+    </SectionBody>
 </section>

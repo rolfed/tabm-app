@@ -1,34 +1,78 @@
 <script>
 	import SectionTitle from './SectionTitle.svelte';
+	import SectionBody from './SectionBody.svelte';
+	import Label from './Label.svelte'
 </script>
 
-<section class="h-auto md:h-screen">
-	<SectionTitle title="Contact" />
-	<form class="grid grid-cols-1 gap-4 bg-gray-50 rounded p-4 md:p-32">
-		<label class="block text-gray-500" for="subject"> Subject </label>
-		<input
-			type="text"
-			class="font-serif shadow appearance-none border rounded w-full py-2 px-4 text-gray-500 leading-tight focus:outline-none focus:shadow-outline"
-			id="subject"
-			placeholder="Tell me something"
-		/>
+<section class="h-auto my-20 md:h-screen md:my-0">
+    <SectionBody>
+	    <SectionTitle title="Contact" />
+        <form class="grid grid-cols-1">
+            <div class="my-5">
+                <Label forInput="subject" label="Subject"/>
+                <input
+                    type="text"
+                    class="font-serif
+                           shadow
+                           appearance-none
+                           border
+                           rounded
+                           w-full
+                           py-2
+                           px-4
+                           text-gray-500
+                           leading-tight
+                           focus:outline-none
+                           focus:shadow-outline"
+                    id="subject"
+                    placeholder="Tell me something"
+                />
+            </div>
 
-		<label class="block text-gray-500" for="email"> Email </label>
-		<input
-			type="email"
-			class="font-serif shadow appearance-none border rounded w-full py-2 px-4 text-gray-500 leading-tight focus:outline-none focus:shadow-outline"
-			id="email"
-			placeholder="email"
-		/>
+            <div class="my-5">
+                <Label forInput="Email" label="Email"/>
+                <input
+                    type="email"
+                    class="font-serif
+                           shadow
+                           appearance-none
+                           border
+                           rounded
+                           w-full
+                           py-2
+                           px-4
+                           text-gray-500
+                           leading-tight
+                           focus:outline-none
+                           focus:shadow-outline"
+                    id="email"
+                    placeholder="email"
+                />
+            </div>
 
-		<label class="block text-gray-500" for="message"> Message </label>
-		<textarea
-			class="font-serif shadow appearance-none border rounded w-full py-2 px-4 text-gray-500 leading-tight focus:outline-none focus:shadow-outline"
-			placeholder="What do you have to say?"
-			id="message"></textarea>
+            <div class="my-5">
+                <Label forInput="message" label="Message"/>
+                <textarea
+                    class="font-serif
+                           shadow
+                           appearance-none
+                           border
+                           rounded
+                           w-full
+                           py-2
+                           px-4
+                           text-gray-500
+                           leading-tight
+                           focus:outline-none
+                           focus:shadow-outline"
+                    placeholder="Talk to me"
+                    id="message"
+                 ></textarea>
+            </div>
 
-		<button class="bg-yellow-200 rounded text-gray-50">Submit</button>
-	</form>
+            <button class="bg-yellow-200 rounded text-gray-50">Submit</button>
+        </form>
+    </SectionBody>
 </section>
 
 <style>
